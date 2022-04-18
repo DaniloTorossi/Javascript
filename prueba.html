@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.js">
+  <link rel="stylesheet" href="style.css">
+  <script>
+let nombreIngresado   = prompt("Ingresar nombre");
+let apellidoIngresado = prompt("Ingresar apellido");
+let edadIngresada = prompt("Ingresar edad");
+let pesoIngresado = prompt ("Ingresar peso");
+let alturaIngresada = prompt ("ingresar altura")
+var Imc = (pesoIngresado/(alturaIngresada*alturaIngresada))
+ 
+
+
+if((nombreIngresado !="") && (apellidoIngresado !=""))
+if((pesoIngresado !="") && (edadIngresada !=""))
+ {
+   alert("Nombre: "+nombreIngresado +"\nApellido: "+apellidoIngresado +"\nPeso: "+pesoIngresado +"\nEdad : "+edadIngresada +"\nImc: "+Imc); 
+    }
+    else if  (Imc => "25")  { alert("tenes que consultar un medico" );  }
+    else if  (Imc <= "24")  { alert("estas bien" );  }
+    
+    
+
+  
+  
+
+    </script>
+  <title>Mi primer Javascript</title>
+</head>
+<body>
+
+<script src="main.js"></script>  
+</body>
+</html>
